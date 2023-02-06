@@ -74,7 +74,9 @@ const sellsyProxy = (req, res) => {
     method: req.method,
     headers: {
       'authorization': req.headers.authorization,
-      'content-type': req.headers['content-type']
+      'content-type': req.headers['content-type'],
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'PUT, POST, OPTIONS',
     },
     body: params
   }).then(r => r.json())
