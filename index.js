@@ -14,7 +14,7 @@ dotenv.config();
 
 const app = express()
 app.use(cors({
-  origin: 'https://sistms.vercel.app'
+  origin: '*'
 }));
 
 app.use(bodyParser.json()); // for parsing application/json
