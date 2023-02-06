@@ -75,7 +75,7 @@ const sellsyProxy = (req, res) => {
     headers: {
       'authorization': req.headers.authorization,
       'content-type': req.headers['content-type'],
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': 'https://sistmsapi.herokuapp.com/',
       'Access-Control-Allow-Methods': 'PUT, POST, OPTIONS',
     },
     body: params
